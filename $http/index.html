@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="bootstrap.min.css">
+<script src="jquery-3.2.0.js"></script>
+<script src="angular1.3.js"></script>
+<script src="script.js"></script>
+<script src="sampleService.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+    <p>Metro Cities in India</p>
+
+    <ul>
+        <li ng-repeat="city in cities"><b>Name :</b> {{city.name}}; <b>Type :</b> {{city.type}}</li>
+    </ul>
+
+    <table class="table-bordered table-hover">
+        <thead>
+        <th>Name</th>
+        <th>Type</th>
+        </thead>
+        <tr ng-repeat="city in cities">
+            <td>{{city.name}}</td>
+            <td>{{city.type}}</td>
+        </tr>
+
+    </table>
+
+
+    <form ng-submit="sendPost()">
+        <input ng-model="firstName" placeholder="Please Enter First Name"/>
+        <input ng-model="lastName" placeholder="Please Enter Last Name"/>
+        <button type="submit">Send</button>
+    </form>
+
+</div>
+
+
+</body>
+</html>

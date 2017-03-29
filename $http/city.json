@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Bangalore",
+    "type": "metro"
+  },
+  {
+    "name": "Mumbai",
+    "type": "metro"
+  },
+  {
+    "name": "Delhi",
+    "type": "metro"
+  }
+]
